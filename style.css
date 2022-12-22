@@ -1,3 +1,7 @@
+/*==================
+ Common CSS 
+ ===================*/
+
 * {
   padding: 0;
   margin: 0;
@@ -5,14 +9,41 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  width: 100vw;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 header {
   height: 100vh;
   width: 100%;
-  background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('eduford_img/banner.png') no-repeat center/cover;
+  background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url('eduford_img/banner.png') no-repeat center/cover;
   position: relative;
   overflow: hidden;
+}
+
+.container {
+  max-width: 1300px;
+  width: 88%;
+  padding: 1.5rem;
+  margin: auto;
+}
+
+.section {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+p {
+  color: #a1a1a1;
+  font-size: 14px;
 }
 
 nav {
@@ -25,7 +56,7 @@ nav img {
   width: 150px;
 }
 
-.nav-link{
+.nav-link {
   transition: 0.6s;
 }
 .nav-link ul {
@@ -74,7 +105,7 @@ nav img {
 
 .text-box p {
   font-size: 13px;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .text-box a {
@@ -83,7 +114,7 @@ nav img {
   color: white;
   border: 1px solid #f44336;
   font-size: 13px;
-  padding: 7px 1rem;
+  padding: 13px 5rem;
   transition: 0.5s;
 }
 
@@ -97,24 +128,139 @@ svg.bi.bi-x-circle {
   right: -160px;
   display: none;
 }
-svg.bi.bi-x-circle:hover{
+svg.bi.bi-x-circle:hover {
   cursor: pointer;
 }
-.menu{
+.menu {
   color: aliceblue;
   cursor: pointer;
   position: absolute;
-  top:3%;
+  top: 3%;
   right: 4%;
   display: none;
 }
-@media(max-width: 700px) {
+
+/* ===============================
+course section style starts here
+================================ */
+.div-header-text {
+  margin: 1rem 0px;
+}
+.div-header-text h1 {
+  font-size: 2.5em;
+  margin: 1.5rem 0px;
+}
+
+.div-body {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-top: 1rem;
+}
+
+.div-item {
+  background-color: #fff3f3;
+  border-radius: 10px;
+  padding: 20px 15px;
+  transition: 0.5s;
+}
+.div-item h3 {
+  margin: 15px 0px;
+  font-size: 1.5em;
+}
+.div-item:hover {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* =========================
+campus style starts here
+============================*/
+.my-campus {
+  background-color: white;
+  padding: 0;
+  border-radius: 1rem 1rem 2rem 2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.my-campus:hover {
+  box-shadow: none;
+}
+
+.my-campus:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 1000px;
+  left: 0;
+  background-color: rgba(220, 165, 175, 0.614);
+  transition: 0.5s;
+}
+.my-campus span {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: white;
+  font-weight: 400;
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 2;
+}
+.my-campus:hover::after {
+  top: 0;
+}
+
+.my-campus:hover span {
+  top: 50%;
+  display: block;
+  opacity: 1;
+}
+
+/* =========================
+Facilities section style starts here
+============================*/
+.my-facilities {
+  background-color: white;
+  width: 371px;
+  margin: auto;
+  height: 524px;
+}
+
+/*======================== review section style  
+=========================*/
+.review-item {
+  display: flex;
+  gap: 1rem;
+  height: 150px;
+}
+
+.review-item-body {
+  height: 150px;
+}
+.reviewer-img-div {
+  width: 266px;
+  height: 266px;
+}
+
+.review-item img {
+  border-radius: 50%;
+}
+/* =========================
+Media query for android
+============================== */
+
+@media (max-width: 700px) {
   .text-box h1 {
     font-size: 15px;
   }
-.menu{
-  display: block;
-}
+  .menu {
+    display: block;
+  }
   nav {
     padding: 10px 16px;
   }
@@ -123,22 +269,27 @@ svg.bi.bi-x-circle:hover{
     position: absolute;
     top: 0%;
     right: -200%;
-    width:200px;
+    width: 200px;
     height: 94vh;
     background-color: gray;
     padding: 1rem;
     z-index: 5;
   }
-    .nav-link ul{
-      position: absolute;
-      left: 20%;
-      top: 10%;
-    }
+  .nav-link ul {
+    position: absolute;
+    left: 20%;
+    top: 10%;
+  }
   .nav-link ul li {
     padding: 1rem;
     float: none;
   }
-    svg.bi.bi-x-circle{
-      display: inline-block;
-    }
+  svg.bi.bi-x-circle {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 700px) {
+  .div-body {
+    flex-direction: row;
+  }
 }
