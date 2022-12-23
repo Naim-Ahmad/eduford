@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css" integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <!-- Header Starts here -->
@@ -26,8 +26,8 @@
           <div id="close" onclick="closeNav()">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
+              width="25"
+              height="25"
               fill="currentColor"
               class="bi bi-x-circle"
               viewBox="0 0 16 16"
@@ -41,11 +41,11 @@
             </svg>
           </div>
           <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">COURSE</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
           </ul>
         </div>
         <div class="menu" onclick="showMenu()">
@@ -82,7 +82,7 @@
     <!-- Courses section starts here -->
     <section class="section">
       <div class="container">
-        <div class="div-header-text">
+        <div class="div-header-txt">
           <h1>Courses we offer</h1>
           <p>
             Explore the intersection of technology and society. Learn about
@@ -190,10 +190,10 @@
           <h1>What Our Student Says</h1>
           <p>We commit to meet the financial need of every admitted undergraduate student. We don’t consider your ability to pay when we review your application, and we don’t base our decision on whether you can cover the cost. If you’re accepted here, you belong here.</p>
         </div>
-        <div class="div-body">
+        <div class="div-body review-body">
           <div class="div-item review-item">
             <div class="reviewer-img-div"><img src="./eduford_img/user1.jpg" alt="Anamika Saha"></div>
-            <div>
+            <div class="item-right">
               <p>“Eduford is home to me not because of the fancy buildings like Healy Hall, or its prestigious reputation, but rather because of the university’s care for the whole person as each of us attempts to live our lives for others.” </p>
               <h3>Anamika Saha</h3>
               <i class="fa-solid fa-star"></i>
@@ -205,30 +205,44 @@
           </div>
           <div class="div-item review-item">
             <div class="reviewer-img-div"><img src="./eduford_img/user2.jpg" alt="Abhishek Roy"></div>
-            <div class="review-item-body ">
+            <div class="item-right">
               <p>“It’s likely that you will come to love some of the most amazing souls this campus has to offer. That love may come in the form of friendships that you know will last forever.” </p>
               <h3>Abhishek Roy</h3>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- Review Section endss here -->
 
-    <!-- Review Section starts here -->
-    <!-- JavaScript -->
-    <script>
-      const navLink = document.getElementById('nav-link')
-      function showMenu() {
-        navLink.style.right = '0px'
-      }
-      function closeNav() {
-        navLink.style.right = '-200%'
-      }
-    </script>
+    <!-- enroll section starts here -->
+    <section class="section enroll">
+      <div class="container">
+        <h1>Enroll For Our Various Online Courses</h1>
+        <h1>Anywhere from the World</h1>
+        <a href="contact.html">Contact Us</a>
+      </div>
+
+    </section>
+
+    <!-- enroll section ends here -->
+
+    <footer class="section">
+      <div class="container">
+        <h4>About Us</h4>
+        <p>We’re a leading research university with a heart. Founded in the decade that the U.S. Constitution was signed, we’re the nation’s oldest Catholic and Jesuit university. </p>
+        <p> We’re a community of people who bridge our disparate experiences and identities. Meet the people and places that make Eduford home.</p>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+      <p>&copy; Made By Naim Ahmad</p>
+    </footer>
+    <script src="app.js"></script>
   </body>
 </html>

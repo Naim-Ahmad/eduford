@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eduford - a university's website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="about">
+      <div class="container">
+        <nav>
+          <a href="index.html" class="logo"
+            ><img src="eduford_img/logo.png" alt="eduford logo"
+          /></a>
+          <div class="nav-link" id="nav-link">
+            <div id="close" onclick="closeNav()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-x-circle"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                />
+                <path
+                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </div>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="course.html">COURSE</a></li>
+              <li><a href="blog.html">BLOG</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+          <div class="menu" onclick="showMenu()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </div>
+        </nav>
+        <div class="text-box">
+          <h2>Our Courses</h2>
+        </div>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container">
+        <div class="div-header-text">
+          <h1>Courses we offer</h1>
+          <p>
+            Explore the intersection of technology and society. Learn about
+            environmental justice. Take the famous Problem of God course. Our
+            innovative courses inspire and invite you to help solve some of
+            today’s most pressing local, national and global issues.
+          </p>
+        </div>
+        <div class="div-body">
+          <div class="div-item">
+            <h3>Undergraduate Programs</h3>
+            <p>
+              For decades, Eduford College has improved the health of our
+              communities, one graduate at a time. The JoAnn McGrath School of
+              Nursing and Health Professions, as one of the largest nursing
+              schools in Wisconsin, offers a wide array of fully accredited
+              nursing programs, guaranteed clinical placements and a
+              technology-rich Center for Clinical Education.
+            </p>
+          </div>
+          <div class="div-item">
+            <h3>Graduate Programs</h3>
+            <p>
+              Building on our strong roots in leadership, health care and
+              education, Eduford is proud to offer an array of coed graduate
+              programs for women and men who are ready to advance their careers
+              and grow as leaders. The Eduford College Community Psychology
+              Master's program will help you to meet your goals of becoming a
+              Licensed Professional Counselor.
+            </p>
+          </div>
+          <div class="div-item">
+            <h3>Post Graduation</h3>
+            <p>
+              The Eduford, as one of the largest nursing schools in Wisconsin,
+              offers a wide array of fully accredited nursing programs,
+              guaranteed clinical placements and a technology-rich Center for
+              Clinical Education. The Eduford College Community Psychology
+              Master's program will help you to meet your goals of becoming a
+              Licensed Professional Counselor.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="div-header-text">
+          <h1>Our Facilities</h1>
+          <p>
+            We commit to meet the financial need of every admitted undergraduate
+            student. We don’t consider your ability to pay when we review your
+            application, and we don’t base our decision on whether you can cover
+            the cost. If you’re accepted here, you belong here.
+          </p>
+        </div>
+        <div class="div-body">
+          <div class="div-item my-facilities">
+            <img src="./eduford_img/library.png" alt="World Class Library" />
+            <h3>World Class Library</h3>
+            <p>
+              Pursue research at Eduford’s libraries, which include more than
+              3.5 million holdings. Whether your focus is on a specific
+              discipline, interdisciplinary areas or emerging fields, our
+              libraries offer academic resources, a maker hub, collaborative
+              spaces and more.
+            </p>
+          </div>
+          <div class="div-item my-facilities">
+            <img src="./eduford_img/basketball.png" alt="Basket Ball" />
+            <h3>Largest Play Ground</h3>
+            <p>
+              The College introduces students to philosophy and theology and
+              challenges them to delve deeply into the arts, humanities,
+              languages, social sciences and sciences.
+            </p>
+          </div>
+          <div class="div-item my-facilities">
+            <img src="./eduford_img/cafeteria.png" alt="Cafe Aria" />
+            <h3>Tasty and Healthy Food.</h3>
+            <p>
+              Whether students pursue studies in Arabic, chemistry, government
+              or one of hundreds of other opportunities, they are part of a rich
+              legacy of academic excellence designed to serve them well in an
+              ever-changing world.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="section">
+      <div class="container">
+        <h4>About Us</h4>
+        <p>
+          We’re a leading research university with a heart. Founded in the
+          decade that the U.S. Constitution was signed, we’re the nation’s
+          oldest Catholic and Jesuit university.
+        </p>
+        <p>
+          We’re a community of people who bridge our disparate experiences and
+          identities. Meet the people and places that make Eduford home.
+        </p>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+      <p>&copy; Made By Naim Ahmad</p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

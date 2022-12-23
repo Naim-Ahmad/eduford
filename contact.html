@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eduford - a university's website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="about">
+      <div class="container">
+        <nav>
+          <a href="index.html" class="logo"
+            ><img src="eduford_img/logo.png" alt="eduford logo"
+          /></a>
+          <div class="nav-link" id="nav-link">
+            <div id="close" onclick="closeNav()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-x-circle"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                />
+                <path
+                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </div>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="course.html">COURSE</a></li>
+              <li><a href="blog.html">BLOG</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+          <div class="menu" onclick="showMenu()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </div>
+        </nav>
+        <div class="text-box">
+          <h2>Contact Us</h2>
+        </div>
+      </div>
+    </header>
+
+    <section class="contact-section">
+      <div class="container commnet">
+        <div class="contact">
+          <div class="contact-box">
+            <div class="icon"><i class="fa-solid fa-2x fa-house"></i></div>
+
+            <div class="text">
+              <h2>University of Engineering and Management, Gurukul Campus</h2>
+              <p>Jaipur, Rajasthan, India</p>
+            </div>
+          </div>
+          <div class="contact-box">
+            <div class="icon"><i class="fa-solid fa-2x fa-phone"></i></div>
+
+            <div class="text">
+              <h2>+91 6378281761</h2>
+              <p>Monday to Saturday, 10AM to 6PM</p>
+            </div>
+          </div>
+          <div class="contact-box">
+            <div class="icon"><i class="fa-regular fa-2x fa-envelope"></i></div>
+
+            <div class="text">
+              <h2>amalendupandey56@gmail.com</h2>
+              <p>Email us your queries</p>
+            </div>
+          </div>
+        </div>
+        <div class="comment-sec message-sec">
+          <div class="mb">
+            <input
+              type="text"
+              name="User-Name"
+              id="user-name"
+              placeholder="Enter Your Name"
+            />
+          </div>
+          <div class="mb">
+            <input
+              type="email"
+              name="User-email"
+              id="user-email"
+              placeholder="Enter Email Address"
+            />
+          </div>
+          <div class="mb">
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Enter Your Subject"
+            />
+          </div>
+          <div class="mb">
+            <textarea
+              name=""
+              id="comment-text"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <button>Send Message</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="section">
+      <div class="container">
+        <h4>About Us</h4>
+        <p>
+          We’re a leading research university with a heart. Founded in the
+          decade that the U.S. Constitution was signed, we’re the nation’s
+          oldest Catholic and Jesuit university.
+        </p>
+        <p>
+          We’re a community of people who bridge our disparate experiences and
+          identities. Meet the people and places that make Eduford home.
+        </p>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+      <p>&copy; Made By Naim Ahmad</p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
